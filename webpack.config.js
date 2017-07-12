@@ -7,6 +7,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'build'),
+    filename: 'greeter.js'
   },
   plugins: [
     // Copy our app's index.html to the build folder.
