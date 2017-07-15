@@ -50,3 +50,7 @@ h3 {
 .hint {
   color: #666;
 }
+
+#ethaddress {
+  color: green;
+}
