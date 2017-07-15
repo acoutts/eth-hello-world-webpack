@@ -18,8 +18,8 @@ contract Mortal {
 contract Greeter is Mortal {
   string greeting;
 
-  function greeter() public {
-    greeting = "Hello, World!";
+  function Greeter() public {
+    greeting = "Initial instantiation greeting.";
   }
 
   function getGreeting() constant returns (string) {

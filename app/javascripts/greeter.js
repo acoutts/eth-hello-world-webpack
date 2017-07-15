@@ -40,6 +40,7 @@ window.App = {
       account = accounts[0];
 
       self.refreshGreeting();
+      self.setStatus("Contract initiation complete.");
     });
   },
 
