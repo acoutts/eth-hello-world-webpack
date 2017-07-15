@@ -19,7 +19,7 @@ contract Greeter is Mortal {
   string greeting;
 
   function Greeter() public {
-    greeting = "Initial instantiation greeting.";
+    //~ greeting = "Initial instantiation greeting.";
   }
 
   function getGreeting() constant returns (string) {
