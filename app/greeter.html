@@ -8,12 +8,12 @@
 <body>
   <h1>Greeter</h1>
   <h2>A simple HelloWorld app</h2>
-  <h3>The current greeting is <span class="black"><span id="greeting"></span> 0xDEADBEEF</span></h3>
+  <h3>The current greeting is <span class="black"><span id="currentGreeting"></span> 0xDEADBEEF</span></h3>
 
   <br>
   <h1>Set New Greeting</h1>
-  <br><label for="greeting">Greeting:</label><input type="text" id="greeting" placeholder="New greeting message!"></input>
-  <br><br><button id="changeGreeting" onclick="App.changeGreeting)">Change Greeting</button>
+  <br><label for="newGreeting">Greeting:</label><input type="text" id="newGreeting" placeholder="New greeting message!"></input>
+  <br><br><button id="changeGreeting" onclick="App.setGreeting()">Change Greeting</button>
   <br><br>
   <span id="status"></span>
   <br>
