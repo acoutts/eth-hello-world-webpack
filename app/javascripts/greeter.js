@@ -51,10 +51,10 @@ window.App = {
   refreshGreeting: function() {
     var self = this;
 
-    var greeter;
+    var greet;
     Greeter.deployed().then(function(instance) {
-      greeter = instance;
-      return greeter.getGreeting();
+      greet = instance;
+      return greet.getGreeting.call({from: account});
     }).then(function(value) {
       var greeting_element = document.getElementById("currentGreeting");
       greeting_element.innerHTML = value.valueOf();
@@ -68,24 +68,21 @@ window.App = {
     var self = this;
 
     var newGreeting = document.getElementById("newGreeting").value;
-    console.log(newGreeting);
-
     this.setStatus("Initiating transaction... (please wait)");
-    console.log("initializing transaction...");
 
-    var greeter;
+    var greet;
     Greeter.deployed().then(function(instance) {
-      greeter = instance;
-      return greeter.setGreeting(newGreeting, {from: account});
+      greet = instance;
+      return greet.setGreeting(newGreeting, {from: account});
     }).then(function() {
       self.setStatus("Transaction complete!");
-      conosle.log("transaction complete");
       self.refreshGreeting();
     }).catch(function(e) {
       console.log(e);
       self.setStatus("Error setting new greeting; see log.");
     });
   }
+
 };
 
 window.addEventListener('load', function() {
