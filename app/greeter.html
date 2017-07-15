@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Greeter HelloWorld w/ Frontend</title>
+  <title>Ethereum Greeter dApp</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <script src="./greeter.js"></script>
 </head>
 <body>
-  <h1>Greeter</h1>
-  <h2>A simple HelloWorld app</h2>
-  <h3>The current greeting is <span class="black"><span id="currentGreeting">0xDEADBEEF</span> </span></h3>
-
+  <h1>Welcome to Greeter</h1>
   <br>
-  <h1>Set New Greeting</h1>
-  <br><label for="newGreeting">Greeting:</label><input type="text" id="newGreeting" placeholder="New greeting message!"></input>
-  <br><br><button id="changeGreeting" onclick="App.setGreeting()">Change Greeting</button>
+  <span>A simple dApp written in Solidity, created from the Consensys webpack example and Ethereum.org's Greeter example. Use the form below to save a new message to the blockchain and display it here.</span>
+  <h3>Current Network: <strong class="black">Ropsten Testnet</strong></h3>
+  <h3>The current message is <span class="black"><span id="currentGreeting">[n/a]</span> </span></h3>
+  <br>
+  <br>
+  <h1>Change Message</h1>
+  <br><label for="newGreeting">Message:</label><input type="text" id="newGreeting" placeholder="New greeting message!"></input>
+  <br><br><button id="changeGreeting" onclick="App.setGreeting()">Set Message</button>
   <br><br>
   <span id="status"></span>
   <br>
   <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
   <br>
   <br>
-  <span class="hint">Please consider sending a donation to allow me more time to develop: <strong id="ethaddress">0x568E0e5300cE81ec9Aa453780B8b6b8c9eBFb99d</strong></span>
+  <span class="hint">Please consider sending a donation to allow me more time to develop:</span>
+  <br><span><strong id="ethaddress"><span class="black">ETH: </span>0x568E0e5300cE81ec9Aa453780B8b6b8c9eBFb99d</strong></span>
   <br>
   <br>
   <h4>Created by: Andrew Coutts</h4><span class="hint">To view the source code, please visit the repo <a href="https://github.com/acoutts/eth-hello-world-webpack" target=_new>here</a>.</span>
