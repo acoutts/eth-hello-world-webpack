@@ -93,7 +93,7 @@ window.addEventListener('load', function() {
     // Use Mist/MetaMask's provider
     window.web3 = new Web3(web3.currentProvider);
   } else {
-    alert("Error: No web3 detected. Please ensure you're visiting this page from a compatibile web3 browser such as Chrome with the MetaMask extension or from a Mist wallet.\n\nThis page will not function without a compatible web3 browser.");
+    alert("Error: No web3 provider detected. Please ensure you're visiting this page from a compatibile web3 browser such as Chrome with the MetaMask extension or using the Mist wallet.\n\nThis page will not function without a compatible web3 browser.");
     console.warn("Error: No web3 detected. Falling back to http://localhost:8545.");
     self.setStatus("Error: No web3 detected. Please visit from a web3 enabled browser such as Mist or MetaMask.");
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
